@@ -18,9 +18,21 @@ Log in to the secondary server, open the Server Manager, navigate to "Local Serv
 
 Install Active Directory Domain Services (AD DS) on the secondary server via the Server Manager. Select "Manage," choose "Add Roles and Features," and select the secondary server. Add "Active Directory Domain Services" and the necessary features, then complete the installation wizard. Promote the server to a Domain Controller by selecting "Promote this server to a domain controller" from the notification flag, choosing "Add a domain controller to an existing domain," providing domain credentials, and configuring the options. Restart the server after completing the wizard.
 
+![Deployment Configuration](<Replicating a Domain Controller, DHCP and DNS Server/Replicating the Domain Controller - Deployment Configuration.PNG>)<br>
+![Domain Controller Options](<Replicating a Domain Controller, DHCP and DNS Server/Replicating the Domain Controller - Domain Controller Options.PNG>)<br>
+![DNS Options](<Replicating a Domain Controller, DHCP and DNS Server/Replicating the Domain Controller - DNS Options.PNG>)<br>
+![Additional Options](<Replicating a Domain Controller, DHCP and DNS Server/Replicating the Domain Controller - Additional Options.PNG>)<br>
+![Paths](<Replicating a Domain Controller, DHCP and DNS Server/Replicating the Domain Controller - Paths.PNG>)<br>
+![Review Options](<Replicating a Domain Controller, DHCP and DNS Server/Replicating the Domain Controller - Review Options.PNG>)<br>
+![Prerequisites Check](<Replicating a Domain Controller, DHCP and DNS Server/Replicating the Domain Controller - Prerequisites Check.PNG>)<br>
+![Installation](<Replicating a Domain Controller, DHCP and DNS Server/Replicating the Domain Controller - Installation.PNG>)
+
 ### Replicating the DHCP Server
 
 Install the DHCP Server role on the secondary server via the Server Manager. Select "Manage" and "Add Roles and Features," then choose "DHCP Server" and complete the wizard. Authorize the DHCP server in the DHCP console. Export the DHCP configuration from the primary server using the command `netsh dhcp server export C:\dhcpconfig.xml all`, transfer the file to the secondary server, and import it using `netsh dhcp server import C:\dhcpconfig.xml all`.
+
+![Manage Authorized Servers](<Replicating a Domain Controller, DHCP and DNS Server/Replicating the DHCP Server - Manage Authorized Servers.PNG>)
+![DHCP Manager](<Replicating a Domain Controller, DHCP and DNS Server/Replicating the DHCP Server - DHCP Manager.PNG>)
 
 ### Replicating the DNS Server
 
