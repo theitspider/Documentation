@@ -20,6 +20,9 @@ Execute the PowerShell command provided below to activate Hyper-V features:
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 ```
 
+![Enabling Hyper-V Features](<Installing Hyper-V on a Machine/Installing Hyper-V on a Machine - Enabling Hyper-V Features.PNG>)<br>
+![Enable Hyper-V with CMD and DISM](<Installing Hyper-V on a Machine/Installing Hyper-V on a Machine - Enable Hyper-V with CMD and DISM.PNG>)
+
 This command triggers the activation of all essential Hyper-V components on the system, initiating the installation process.
 
 ## System Restart
@@ -33,6 +36,7 @@ Once the system has restarted, open PowerShell as Administrator again and execut
 ```powershell
 Get-WindowsFeature -Name Hyper-V | Select-Object -Property Name,Installed
 ```
+![Hyper-V Manager](<Installing Hyper-V on a Machine/Installing Hyper-V on a Machine - Hyper-V Manager.PNG>)
 
 ## Additional Configuration (Optional)
 
