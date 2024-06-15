@@ -15,6 +15,8 @@ Before connecting to an AWS instance using PowerShell with OpenSSH, ensure the f
   Install-Module -Name AWSPowerShell
   ```
 
+![Installing the AWSPowerShell Module](<Connecting to an AWS Instance Using PowerShell with OpenSSH/Connecting to an AWS Instance Using PowerShell with OpenSSH - AWS Tools for PowerShell.PNG>)
+
 ## Connection Process
 
 To initiate the connection process, first, open PowerShell on the local machine. Locate PowerShell in the Windows Start menu and select the appropriate option to launch it.
@@ -30,6 +32,8 @@ Now, establish a secure shell connection to the AWS instance using the `ssh` com
 ```powershell
 ssh -i "C:\Path\To\Your\PrivateKey.pem" UserName@InstancePublicIpAddress
 ```
+
+![Establishsing an SSH connection to an Instance](<Connecting to an AWS Instance Using PowerShell with OpenSSH/Connecting to an AWS Instance Using PowerShell with OpenSSH - Instance SSH Connection.PNG>)
 
 Once connected, execute commands directly on the AWS instance using the OpenSSH session in PowerShell. For instance, list the contents of a directory using the `ls` command.
 
