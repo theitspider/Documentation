@@ -8,21 +8,31 @@ This guide offers a comprehensive overview of deploying instances on Amazon Web 
 
 Begin by accessing the AWS Management Console, the web-based interface for managing AWS services. Navigate to the console by entering the AWS Console URL in a web browser and logging in with AWS account credentials.
 
+![Instance Name](<Deploying Instances on Amazon Web Services (AWS)/Deploying Instances on Amazon Web Services (AWS) - Instance Name.png>)
+
 ## Selecting Instance Types
 
 Once logged into the AWS Management Console, navigate to the EC2 service, which provides resizable compute capacity in the cloud. From the EC2 dashboard, select "Launch Instance" to initiate the instance creation process. Instance types can be chosen based on workload requirements, considering factors such as CPU, memory, storage, and network performance.
+
+![Instance Type & Key Pair](<Deploying Instances on Amazon Web Services (AWS)/Deploying Instances on Amazon Web Services (AWS) - Instance Type & Key Pair.png>)
 
 ## Configuring Instance Settings
 
 Proceed to configure instance settings, including network and security configurations. Choose a VPC (Virtual Private Cloud) and subnet for instance deployment. Configure security groups to control inbound and outbound traffic to the instance, specifying protocols, ports, and source IP ranges.
 
+![Network Settings](<Deploying Instances on Amazon Web Services (AWS)/Deploying Instances on Amazon Web Services (AWS) - Network Settings.png>)
+
 ## Adding Storage
 
 Configure storage options for the instance by specifying the root volume size and additional storage volumes if necessary. Choose between Amazon EBS (Elastic Block Store) volumes for persistent block storage or instance store volumes for temporary storage.
 
+![Configure Storage](<Deploying Instances on Amazon Web Services (AWS)/Deploying Instances on Amazon Web Services (AWS) - Configure Storage.png>)
+
 ## Customizing Instance Details
 
 Additional instance details can be customized, such as IAM (Identity and Access Management) roles, user data scripts for instance initialization, and tags for resource categorization and management.
+
+![Application and OS Images (AMI)](<Deploying Instances on Amazon Web Services (AWS)/Deploying Instances on Amazon Web Services (AWS) - Application and OS Images (AMI).png>)
 
 ## Reviewing Configuration
 
@@ -31,6 +41,8 @@ Review the configured settings to ensure alignment with requirements. Verify the
 ## Launching the Instance
 
 Once satisfied with the configuration, proceed to launch the instance. AWS will provision the virtual machine according to the specified settings. Monitor the instance creation progress through the AWS Management Console, which provides real-time updates on the instance's status.
+
+![Launching Instance](<Deploying Instances on Amazon Web Services (AWS)/Deploying Instances on Amazon Web Services (AWS) - Lauching Instance.png>)
 
 ## Accessing the Instance
 
